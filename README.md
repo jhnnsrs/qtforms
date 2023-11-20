@@ -46,9 +46,6 @@ class MyModel(BaseModel):
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
 
-    model = MyModel(name="hello world")
-    ##model.events.name.connect(lambda x: print(x))
-
     form = Form(LabeledWidgetRegistry(), MyModel, initial_data=dict(name="hello world"), auto_validate=True)
     form.submit.connect(lambda x: print(x))
 
