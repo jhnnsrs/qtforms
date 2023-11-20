@@ -1,4 +1,4 @@
-# mikro
+# qtforms
 
 [![codecov](https://codecov.io/gh/jhnnsrs/qtforms/branch/master/graph/badge.svg?token=UGXEA2THBV)](https://codecov.io/gh/jhnnsrs/qtforms)
 [![PyPI version](https://badge.fury.io/py/qtforms.svg)](https://pypi.org/project/qtforms/)
