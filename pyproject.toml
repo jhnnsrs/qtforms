@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "qtforms"
+version = "0.1.0"
+description = "pydantic powered forms for Qt"
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "qtforms" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pydantic = "<2"
+qtpy = "^2.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-qt = "^4.2.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
