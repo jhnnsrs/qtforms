@@ -25,7 +25,7 @@ jobs:
       - name: Run Poetry Install
         run: poetry install
       - name: Run pyqt install
-        run: pip install pyqt5
+        run: poetry run pip install pyqt5
       - name: Run Tests
         run: poetry run pytest --cov --cov-report=xml -k "not integration"
   linux_unit:
@@ -48,6 +48,6 @@ jobs:
       - name: Run Poetry Install
         run: poetry install
       - name: Run pyqt install
-        run: pip install pyqt5
+        run: poetry run pip install pyqt5
       - name: Run Tests
         run: poetry run pytest --cov --cov-report=xml -k "not integration"

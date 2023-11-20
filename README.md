@@ -70,3 +70,6 @@ These widgets need to follow the `FormWidget` interface, and implement functions
 reported to the widgets.
 
 
+### The widgets look shit
+
+That's by design. Please implement your own widgets and use the widgets just as a template.
