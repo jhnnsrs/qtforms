@@ -21,7 +21,7 @@ class BaseLabeledWidget(QtWidgets.QWidget):
             or None if no description is provided.
     """
 
-    def __init__(self, field: Field, parent: QtWidgets.QWidget | None = None) -> None:
+    def __init__(self, field: Field, parent: Optional[QtWidgets.QWidget] = None) -> None:
         super().__init__(parent)
         self.field = field
 

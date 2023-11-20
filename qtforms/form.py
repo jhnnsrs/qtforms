@@ -20,8 +20,8 @@ class Form(QtWidgets.QWidget):
         auto_submit: bool = False,
         auto_validate: bool = True,
         set_field_errors: bool = True,
-        submit_button:  QtWidgets.QWidget | None = None,
-        parent: QtWidgets.QWidget | None = None,
+        submit_button:  Optional[QtWidgets.QWidget] = None,
+        parent: Optional[QtWidgets.QWidget] = None,
     ) -> None:
         """
         A Validated Form
@@ -128,7 +128,7 @@ class Form(QtWidgets.QWidget):
 
         return keys
 
-    def validate(self, is_submit_validation=False):
+    def validate(self, is_submit_validation: bool =False):
         """
         Validate the form data using the model class.
 

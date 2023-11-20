@@ -23,7 +23,7 @@ class FormWidget(QtWidgets.QWidget):
 
 class WidgetRegistry(Protocol):
     def get_widget_for_field(
-        self, field: Field, parent: QtWidgets.QWidget | None = None
+        self, field: Field, parent: Optional[QtWidgets.QWidget] = None
     ) -> QtWidgets.QWidget:
         """Return a widget for the given field"""
         ...

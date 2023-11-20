@@ -1,5 +1,6 @@
 from qtpy import QtWidgets
 from pydantic import Field
+from typing import Optional
 from .widgets.labeled import LabeledIntWidget, LabeledLineWidget
 
 
@@ -26,7 +27,7 @@ class LabeledWidgetRegistry:
         self.with_label = with_label
         self.with_errors = with_errors
 
-    def get_widget_for_field(self, field: Field, parent: QtWidgets.QWidget | None = None):
+    def get_widget_for_field(self, field: Field, parent: Optional[QtWidgets.QWidget]= None):
         """Returns a labeled widget for the given field
         
         Args:
